@@ -105,9 +105,9 @@ ninja.data = [{
           window.location.href = "/blog/2024/tabs/";
         
       },
-    },{id: "post-a-post-with-typograms",
+    },{id: "post-a-post-with-typograms-ais",
       
-        title: "a post with typograms",
+        title: "a post with typograms AIS",
       
       description: "this is what included typograms code could look like",
       section: "Posts",
