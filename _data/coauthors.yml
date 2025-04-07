@@ -32,3 +32,15 @@
 "planck":
   - firstname: ["Max"]
     url: https://en.wikipedia.org/wiki/Max_Planck
+
+"tuan":
+  firstname: "Tran Dinh Tuan"
+  url: https://scholar.google.com/citations?user=TM0nAnsAAAAJ
+
+"tien":
+  firstname: "Dam Quang Tien"
+  url: https://scholar.google.com/citations?user=TM0nAnsAAAAJ
+
+"lee":
+  firstname: "Lee Joo-Ho"
+  url: https://scholar.google.com/citations?user=TM0nAnsAAAAJ
