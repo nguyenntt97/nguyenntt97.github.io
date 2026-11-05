@@ -1,0 +1,189 @@
+/*******************************************************************************
+ * Personal styles: homepage highlights, research pipeline
+ ******************************************************************************/
+
+$mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+// Technical feel: mono for headings & small labels, body stays Roboto.
+.post-title,
+.post-header .desc,
+.navbar-brand,
+.navbar-nav .nav-link,
+article h2,
+.hl-step,
+.hl-tags span,
+.publications .abbr .badge {
+  font-family: $mono;
+  letter-spacing: -0.01em;
+}
+
+.post-header .desc {
+  font-size: 0.95rem;
+  color: var(--global-theme-color);
+}
+
+// ---------- stat tiles ----------
+.hl-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 1.75rem 0 1.25rem;
+  clear: both;
+
+  > div {
+    border: 1px solid var(--global-divider-color);
+    border-radius: 10px;
+    padding: 0.8rem 0.9rem;
+    background: var(--global-card-bg-color);
+  }
+  b {
+    display: block;
+    font-family: $mono;
+    font-size: 1.6rem;
+    line-height: 1.1;
+    color: var(--global-theme-color);
+  }
+  span {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.78rem;
+    line-height: 1.35;
+    color: var(--global-text-color-light);
+  }
+  @media (max-width: 640px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+// ---------- research pipeline ----------
+.hl-h2 {
+  margin-bottom: 0.2rem;
+}
+.hl-lead {
+  color: var(--global-text-color-light);
+  margin-bottom: 1rem;
+}
+
+.hl-pipe {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.9rem;
+  counter-reset: none;
+
+  li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0.95rem 0.95rem 0.8rem;
+    border: 1px solid var(--global-divider-color);
+    border-top: 3px solid var(--global-theme-color);
+    border-radius: 10px;
+    background: var(--global-card-bg-color);
+    transition:
+      transform 0.15s ease,
+      box-shadow 0.15s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    }
+    // connector arrow between stages
+    &:not(:last-child)::after {
+      content: "→";
+      position: absolute;
+      right: -0.8rem;
+      top: 1.2rem;
+      font-family: $mono;
+      color: var(--global-theme-color);
+      font-size: 0.9rem;
+      z-index: 1;
+    }
+  }
+  .hl-step {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--global-theme-color);
+  }
+  h3 {
+    font-size: 0.98rem;
+    font-weight: 600;
+    margin: 0.35rem 0 0.45rem;
+    line-height: 1.3;
+  }
+  p {
+    font-size: 0.8rem;
+    line-height: 1.45;
+    margin-bottom: 0.55rem;
+  }
+  .hl-papers {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    a {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.08rem 0.45rem;
+      border-radius: 999px;
+      border: 1px solid var(--global-theme-color);
+      color: var(--global-theme-color);
+      &:hover {
+        background: var(--global-theme-color);
+        color: var(--global-bg-color);
+        text-decoration: none;
+      }
+    }
+  }
+  .hl-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    margin: 0;
+    span {
+      font-size: 0.66rem;
+      padding: 0.05rem 0.4rem;
+      border-radius: 4px;
+      background: var(--global-code-bg-color);
+      color: var(--global-text-color-light);
+    }
+  }
+
+  @media (max-width: 860px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    li::after {
+      display: none;
+    }
+  }
+  @media (max-width: 520px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// profile caption
+.profile .more-info p {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+// ---------- monochrome: links need a non-color cue ----------
+article a:not(.badge):not(.btn),
+.news a,
+.post-description a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.hl-pipe .hl-papers a {
+  text-decoration: none;
+}
+
+h2 > a,
+h2 > a:hover {
+  text-decoration: none !important;
+}

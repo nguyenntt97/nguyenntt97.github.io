@@ -1,8 +1,8 @@
 ---
 layout: project
 title: "When Less Is More: A Sparse Facial Motion Structure For Listening Motion Learning"
-description: with background image
-img: assets/img/12.jpg
+description: Sparse keyframe motion tokens for listening-head generation (IEEE TCSS 2025)
+img: assets/img/publication_preview/sfms.png
 importance: 1
 category: work
 related_publications: true
