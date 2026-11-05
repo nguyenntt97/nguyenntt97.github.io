@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Personal styles: homepage highlights, research pipeline, splat hero
+ * Personal styles: homepage highlights, research pipeline
  ******************************************************************************/
 
 $mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
@@ -10,7 +10,6 @@ $mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospac
 .navbar-brand,
 .navbar-nav .nav-link,
 article h2,
-.hl-mono,
 .hl-step,
 .hl-tags span,
 .publications .abbr .badge {
@@ -53,36 +52,6 @@ article h2,
   }
   @media (max-width: 640px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-// ---------- splat hero ----------
-.hl-hero {
-  margin: 0 0 2rem;
-
-  canvas {
-    display: block;
-    width: 100%;
-    height: 320px;
-    border-radius: 12px;
-    border: 1px solid var(--global-divider-color);
-    background:
-      radial-gradient(circle at 50% 45%, color-mix(in srgb, var(--global-theme-color) 10%, transparent), transparent 60%),
-      repeating-linear-gradient(0deg, var(--global-divider-color) 0 1px, transparent 1px 32px),
-      repeating-linear-gradient(90deg, var(--global-divider-color) 0 1px, transparent 1px 32px);
-    cursor: grab;
-    touch-action: pan-y;
-    &:active {
-      cursor: grabbing;
-    }
-  }
-  figcaption {
-    margin-top: 0.5rem;
-    font-size: 0.8rem;
-    color: var(--global-text-color-light);
-  }
-  .hl-mono {
-    color: var(--global-theme-color);
   }
 }
 
@@ -208,11 +177,6 @@ article a:not(.badge):not(.btn),
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
-}
-.hl-hero canvas {
-  background:
-    repeating-linear-gradient(0deg, var(--global-divider-color) 0 1px, transparent 1px 32px),
-    repeating-linear-gradient(90deg, var(--global-divider-color) 0 1px, transparent 1px 32px);
 }
 
 .hl-pipe .hl-papers a {

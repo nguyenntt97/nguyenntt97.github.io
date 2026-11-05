@@ -6,7 +6,7 @@ subtitle: Computer Graphics · 3D Vision · Digital Humans for Robotics
 
 profile:
   align: right
-  image: prof_pic.png
+  image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Postdoctoral Researcher</p>
@@ -39,13 +39,6 @@ Before research, I spent two years as a backend/AI engineer at [VNG Corporation]
   <div><b>3</b><span>display targets<br>screen · hologram · robot</span></div>
   <div><b>5 yrs</b><span>industry R&amp;D<br>collaborations in Japan</span></div>
 </div>
-
-<figure class="hl-hero">
-  <canvas id="splat-head" aria-label="Interactive point-splat rendering of a 3D head" role="img"></canvas>
-  <figcaption>
-    <span class="hl-mono">// live</span> About 3.5k Gaussian splats converge from a sparse four-camera initialization into a head, then idle with listener-style nods. This is a ~300-line toy in plain canvas JS, not my research model. <b>Drag to orbit.</b>
-  </figcaption>
-</figure>
 
 <h2 class="hl-h2">research at a glance</h2>
 <p class="hl-lead">One pipeline, from capturing a real face to giving it a body.</p>
@@ -85,5 +78,3 @@ Before research, I spent two years as a backend/AI engineer at [VNG Corporation]
     <p class="hl-tags"><span>CUDA</span><span>OpenGL</span><span>Looking Glass SDK</span><span>ROS 2</span><span>Unity</span></p>
   </li>
 </ol>
-
-<script defer src="{{ '/assets/js/splat-head.js' | relative_url }}"></script>
