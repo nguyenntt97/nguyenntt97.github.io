@@ -24,9 +24,9 @@ $pink-color: #f92080 !default;
 $pink-color-light: #ffdddd !default;
 $yellow-color: #efcc00 !default;
 
-// Site accent ("render orange")
-$accent-light: #d9480f !default;
-$accent-dark: #ff8a4c !default;
+// Site accent: monochrome
+$accent-light: #111111 !default;
+$accent-dark: #f2f2f2 !default;
 
 $grey-color: #828282 !default;
 $grey-color-light: color.adjust($grey-color, $lightness: 40%);

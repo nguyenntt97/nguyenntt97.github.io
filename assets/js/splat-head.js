@@ -97,28 +97,18 @@
   let sprites = [],
     dark = false,
     lineColor = "rgba(0,0,0,.25)";
-  function parseColor(c) {
-    const m = c.match(/\d+(\.\d+)?/g);
-    if (c.startsWith("#")) {
-      const h = c.slice(1);
-      const v = h.length === 3 ? h.split("").map((k) => parseInt(k + k, 16)) : [0, 2, 4].map((k) => parseInt(h.substr(k, 2), 16));
-      return v;
-    }
-    return m ? m.slice(0, 3).map(Number) : [230, 90, 20];
-  }
   function buildSprites() {
-    const cs = getComputedStyle(document.documentElement);
-    const accent = parseColor((cs.getPropertyValue("--global-theme-color") || "#e8590c").trim());
     dark = document.documentElement.getAttribute("data-theme") === "dark";
     lineColor = dark ? "rgba(255,255,255,.28)" : "rgba(20,24,35,.28)";
     // shadow -> accent -> highlight ramp, so lighting reads the same in both themes
-    const lo = dark ? [55, 50, 55] : [45, 35, 35];
-    const hi = dark ? [255, 236, 220] : [255, 196, 160];
+    // monochrome "pencil" ramp: shadow -> highlight
+    const lo = dark ? [45, 45, 45] : [17, 17, 17];
+    const hi = dark ? [255, 255, 255] : [185, 185, 185];
     const mix = (a, b, t) => a.map((v, i) => Math.round(v + (b[i] - v) * t));
     sprites = [];
     for (let k = 0; k < 16; k++) {
       const t = k / 15; // shade 0..1
-      const c = t < 0.7 ? mix(lo, accent, t / 0.7) : mix(accent, hi, (t - 0.7) / 0.3);
+      const c = mix(lo, hi, t);
       const sz = 32,
         sp = document.createElement("canvas");
       sp.width = sp.height = sz;

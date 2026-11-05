@@ -18,7 +18,7 @@ social: true # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  scrollable: false # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
@@ -71,8 +71,8 @@ Before research, I spent two years as a backend/AI engineer at [VNG Corporation]
     <p>Avatars that listen and react to speech and vision. Methods include sparse keyframe motion tokens, FSQ facial tokenizers, and diffusion models that express pain.</p>
     <p class="hl-papers">
       <a href="{{ '/publications/#nguyen2025less' | relative_url }}">TCSS '25</a>
-      <a href="{{ '/publications/#dam2024paindiffusion' | relative_url }}">IROS '25 🏆</a>
-      <a href="{{ '/publications/#dam2024finite' | relative_url }}">FG '24 🏆</a>
+      <a href="{{ '/publications/#dam2024paindiffusion' | relative_url }}">IROS '25 ★</a>
+      <a href="{{ '/publications/#dam2024finite' | relative_url }}">FG '24 ★</a>
       <a href="{{ '/publications/#nguyen2025survey' | relative_url }}">ISR survey</a>
     </p>
     <p class="hl-tags"><span>Transformers</span><span>diffusion</span><span>VQ / FSQ</span></p>

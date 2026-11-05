@@ -200,3 +200,26 @@ article h2,
   font-size: 0.8rem;
   line-height: 1.5;
 }
+
+// ---------- monochrome: links need a non-color cue ----------
+article a:not(.badge):not(.btn),
+.news a,
+.post-description a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+.hl-hero canvas {
+  background:
+    repeating-linear-gradient(0deg, var(--global-divider-color) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(90deg, var(--global-divider-color) 0 1px, transparent 1px 32px);
+}
+
+.hl-pipe .hl-papers a {
+  text-decoration: none;
+}
+
+h2 > a,
+h2 > a:hover {
+  text-decoration: none !important;
+}

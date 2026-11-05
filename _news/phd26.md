@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Completed my Ph.D. in Information Science and Engineering at Ritsumeikan University. :mortar_board:
+Completed my Ph.D. in Information Science and Engineering at Ritsumeikan University.
