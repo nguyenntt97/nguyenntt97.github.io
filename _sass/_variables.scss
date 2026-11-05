@@ -24,6 +24,10 @@ $pink-color: #f92080 !default;
 $pink-color-light: #ffdddd !default;
 $yellow-color: #efcc00 !default;
 
+// Site accent ("render orange")
+$accent-light: #d9480f !default;
+$accent-dark: #ff8a4c !default;
+
 $grey-color: #828282 !default;
 $grey-color-light: color.adjust($grey-color, $lightness: 40%);
 $grey-color-dark: #1c1c1d;
@@ -34,7 +38,7 @@ $black-color: #000000 !default;
 
 // Theme colors
 
-$code-bg-color-light: rgba($purple-color, 0.05);
+$code-bg-color-light: rgba($accent-light, 0.05);
 $code-bg-color-dark: #2c3237 !default;
 
 // Font awesome location

@@ -2,96 +2,104 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Nguyen Tri Tung Nguyen
+    - name: Position
+      value: Postdoctoral Researcher, Ritsumeikan University
+    - name: Location
+      value: Osaka, Japan
     - name: Languages
-      value: English, German
+      value: English (Fluent, IELTS 7.5), Japanese (Conversational, JLPT N3)
 
-- title: Education
+- title: Research Projects
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: "Simulated Patient: Animatable 4D Head Avatars"
+      institution: 3D Vision & Computer Graphics · PyTorch, CUDA, C++, OpenGL, pycolmap
+      year: Aug 2024 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - End-to-end pipeline reconstructing photorealistic, animatable 4D head avatars with 3D Gaussian Splatting from sparse multi-view RGB captures, used as patient faces in elderly-care training.
+        - Removed explicit camera calibration by refining feed-forward coarse pose estimates with pycolmap to supervise a deformable cross-view point-map network (UR 2026, first author).
+        - Customized the Looking Glass Core SDK to stream 3DGS avatars in real time on holographic displays; wrote CUDA kernels for faster 3DGS rendering on an RTX 4060 (ICEIC).
+    - title: "Simulated Patient: Generative Facial Behavior"
+      institution: Generative Behavior · Python, PyTorch
+      year: Jan 2022 - Present
       description:
-        - Description 1.
-        - Description 2.
+        - Data-driven 3D head avatar that reacts to speech and visual stimuli in in-the-wild scenarios, driving the digital twin's facial behavior (IEEE TCSS; REACT 2024 Challenge winner).
+        - Converted monocular video into 3DMM animations for dataset acquisition; designed a multi-view stereo tracker with learnable camera parameters for better alignment.
+    - title: "Simulated Patient: Robotic Arm for Elderly Care Training"
+      institution: Robotics & Mixed Reality · Python, ROS 2, Unity/Unreal
+      year: Jan 2022 - Present
+      description:
+        - Prototyped a robotic shoulder-arm complex giving the digital twin a physical body for Range-of-Motion (ROM) training.
+        - Pain-response facial expressions modulated by the trainee's performance, integrated into a VR environment.
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Postdoctoral Researcher (Oct 2026 - Present) · Research Assistant (Sep 2021 - Sep 2026)
+      institution: Ritsumeikan University, Osaka, Japan
+      year: Sep 2021 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - "<b>Mill Test Certificate Validator</b> (industry collaboration, Jan 2025 - Present): deep-learning pipeline verifying PDF mill test reports at 99% accuracy, combining tabular layout detection, text recognition, and template matching (Python, PyTorch, Flask)."
+        - "<b>CAD Press-fit Analysis</b> (industry collaboration, Sep 2021 - Mar 2024): pairwise press-fit analysis tool for electrical wiring-harness CAD, validated with PyBullet physics simulation, with a Qt/PythonOCC GUI. Managed the two-year project, including monthly client reporting and on-site technical consultations."
+    - title: Backend / AI Engineer
+      institution: VNG Corporation, Ho Chi Minh City, Vietnam
+      year: Sep 2019 - Aug 2021
       description:
-        - Description 1.
-        - Description 2.
+        - High-load data pipelines and ad-delivery APIs handling millions of requests per second; operated highly available Kafka streams for ad payment services.
+        - CTR prediction models (Factorization Machines, Logistic Regression, clustering) for real-time bidding and constrained ad allocation, evaluated via simulation-based staging and production A/B tests.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Education
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Ph.D. in Information Science and Engineering
+      institution: Ritsumeikan University (OIC Campus), Osaka, Japan · Supervisor Prof. Joo-Ho Lee
+      year: Sep 2023 - Sep 2026
+    - title: M.S. in Information Science and Engineering
+      institution: Ritsumeikan University (BKC Campus), Shiga, Japan
+      year: Sep 2021 - Sep 2023
+    - title: Exchange Capstone in Computer Science
+      institution: Deakin University, Melbourne, Australia
+      year: Mar 2019 - Aug 2019
+    - title: B.S. in Software Engineering
+      institution: FPT University, Ho Chi Minh City, Vietnam
+      year: Aug 2015 - Mar 2019
+
+- title: Technical Skills
+  type: map
+  contents:
+    - name: Research Domains
+      value: 3D Reconstruction & Multi-view Geometry, Digital Humans / Digital Twins, Human-Robot Interaction
+    - name: 3D Vision & Graphics
+      value: 3D Gaussian Splatting, COLMAP / pycolmap, 3DMM, CUDA, OpenGL, Open3D, OpenCV, Looking Glass SDK
+    - name: Robotics & Simulation
+      value: ROS 2, PyBullet, Isaac, Unity, Unreal
+    - name: Software & Platform
+      value: Python, PyTorch, C++, Java, Linux, Git, Docker, CMake, Kafka, Flask
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2025
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Best Entertainment and Amusement Paper Award, IEEE/RSJ IROS 2025
+    - year: 2024
       items:
-        - Max Planck Medal
+        - Winner, REACT Challenge @ IEEE FG 2024
+        - Ritsumeikan University Best Student Paper Award
+    - year: 2021 - 2026
+      items:
+        - Japanese Government (MEXT) Scholarship for M.S. and Ph.D.
+    - year: 2019
+      items:
+        - Valedictorian, School of Software Engineering, FPT University
+        - Winner, TechMe competition (YSO & RMIT University, Melbourne)
+        - Deakin International Scholarship for Exchange Students
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
+- title: Service & Activities
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - Reviewer for IEEE international conferences, including IROS and ICRA
+    - Teaching Assistant for several courses at Ritsumeikan University
+    - Representative of the Ritsumeikan University booth, IROS 2022 (Kyoto)
+    - Technical Team Leader, World Solar Challenge 2019 (Adelaide)
